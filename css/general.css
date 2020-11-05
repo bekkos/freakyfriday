@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    height: 100%;
+    background-color: #000;
+}
+
+nav {
+    width: 100;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav ul li:hover, .title {
+    text-shadow: 0px 0px 2px white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.wrapper {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.one {
+    background-image: url(../image/5.jpg);
+}
+
+.two {
+    background-image: url(../image/3-big.jpg);
+}
+
+.text-container {
+    width: 45%;
+    margin: auto;
+}
+
+.text-container h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3.5vh;
+}
+
+.text-container p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3.5vh 0;
+}
+
+.typewriter {
+    letter-spacing: .15em;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: type 3.5s steps(40, end);
+}
+
+.tc-two img{
+    width: 70%;
+    opacity: 0.5;
+    display: block;
+    margin: 3vh auto;
+    transition-duration: 1s;
+}
+
+.tc-two img:hover {
+    opacity: 0.8;
+    transition-duration: 1s;
+}
+
+button {
+    color: black;
+    margin: 2vh auto;
+    width: 145px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+}
+
+.buy-wrapper {
+    width: 60%;
+    margin: 2vh auto;
+}
+
+.buy-wrapper img {
+    display: block;
+    margin: 3vh auto;
+    width: 70%;
+}
+
+.buy-wrapper h1 {
+    text-align: center;
+    margin: 2vh 0;
+}
+.buy-wrapper p {
+    text-align: center;
+    margin: 2vh auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    width: 135px;
+    height: 30px;
+    font-size: 1.3rem;
+}
+
+.c-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.cform {
+    margin: 5vh auto;
+    width: 60%;
+}
+
+.cform input {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.5vh;
+}
+
+@keyframes type {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@media screen and (max-width: 1430px) {
+    .buy-wrapper {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .text-container {
+        width: 80%;
+    }
+    .c-wrapper {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .buy-wrapper img {
+       width: 85%;
+    }
+    
+
+    .c-wrapper {
+        width: 97%;
+    }
+
+    .cform {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .text-container h3 {
+        font-size: 2rem;
+    }
+    .typewriter {
+        animation: type 1.7s steps(40, end);
+    }
+    .buy-wrapper img {
+        width: 95%;
+     }
+}
