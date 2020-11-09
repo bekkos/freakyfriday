@@ -169,7 +169,12 @@ input {
 .cform input {
     display: inline-block;
     width: 100%;
-    margin-top: 1.5vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+label {
+  padding-top: 2vh;
 }
 
 @keyframes type {
